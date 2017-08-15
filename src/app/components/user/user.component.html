@@ -1,3 +1,14 @@
-<p>
-  user works!
-</p>
+<h1>Hello {{userName}}!! </h1>
+<h3>User details</h3>
+<ul>
+    <li>Age: {{age}}</li>
+    <li>Email:  {{email}}</li>
+</ul>
+<hr>
+<h3>User Address </h3>
+<p> {{address.street}}, {{address.city}}, {{address.state}} </p>
+<hr>
+<h3>Hobbies</h3>
+<ul>
+    <li *ngFor="let hobby of hobbies; let i = index">{{ i + 1 }}: {{hobby}}</li>
+</ul>
